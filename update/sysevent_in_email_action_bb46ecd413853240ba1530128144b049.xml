@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition table="sys_email">direct=SN-HyperionSupport@westfield.com^EQ<item endquery="false" field="direct" goto="false" newquery="false" operator="=" or="false" value="SN-HyperionSupport@westfield.com"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <from/>
+        <name>Create Hyperion Record</name>
+        <order>50</order>
+        <reply_email/>
+        <required_roles>x_wegr_hyperion_co.user</required_roles>
+        <script><![CDATA[(function runAction(/*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
+	
+	// build the ticket desc & shDesc from email content
+	//current.work_notes = "Email received from " + email.origemail;
+	current.description = email.body_text;
+	
+	
+// 	var re = /^(hyperion: |hyperion:)/i;
+// 	var subj = email.subject.toString().replace(re,"");
+// 	current.short_description = subj;
+	
+	//assign to ticket to a particular user
+	if (email.body.assign != undefined)
+		current.assigned_to = email.body.assign;
+	
+	//set the affected user to a particular user
+	var affectedUser = email.body.user;
+	var field;
+	if(affectedUser){
+		//if affectedUser is an email address, attempt to match the email
+		if(affectedUser.indexOf('@') !== -1){
+			field = 'email';
+		}
+		//if we're not matching an email, check for the user name
+		else if(affectedUser.indexOf('@') === -1){
+			field = 'user_name';
+		}
+		var c = new GlideRecord('sys_user');
+		if(c.get(field,affectedUser)){
+			current.u_affected_user = c.getValue('sys_id');
+		}
+	}
+	
+	current.insert();
+	
+})(current, event, email, logger, classifier);]]></script>
+        <stop_processing>true</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>mglenn</sys_created_by>
+        <sys_created_on>2017-02-15 20:42:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bb46ecd413853240ba1530128144b049</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Create Hyperion Record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hyperion Corporate Finance Changes" source="x_wegr_hyperion_co">7e291c9013853240ba1530128144b097</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Hyperion Corporate Finance Changes">7e291c9013853240ba1530128144b097</sys_scope>
+        <sys_update_name>sysevent_in_email_action_bb46ecd413853240ba1530128144b049</sys_update_name>
+        <sys_updated_by>mglenn</sys_updated_by>
+        <sys_updated_on>2017-02-24 18:59:25</sys_updated_on>
+        <table>x_wegr_hyperion_co_hyperion_corporate_finance_changes_table</table>
+        <template/>
+        <type>new</type>
+    </sysevent_in_email_action>
+</record_update>

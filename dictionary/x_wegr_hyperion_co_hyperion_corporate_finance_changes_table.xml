@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="Hyperion Corporate Finance Changes Table" max_length="40" name="x_wegr_hyperion_co_hyperion_corporate_finance_changes_table" sizeclass="1614" type="collection">
+        <element label="Affected End User" max_length="32" name="u_affected_user" reference="sys_user" type="reference"/>
+        <element choice="1" label="Category" max_length="75" name="u_category" type="choice">
+            <choice>
+                <element label="Access Request.Hyperion" sequence="0" value="Access Request.Hyperion"/>
+                <element label="Applications.Hyperion" sequence="1" value="Applications.Hyperion"/>
+                <element label="Applications.Hyperion.FDM Mapping" sequence="2" value="Applications.Hyperion.FDM Mapping"/>
+                <element label="Applications.Hyperion.Metadata.Accounts" sequence="3" value="Applications.Hyperion.Metadata.Accounts"/>
+                <element label="Applications.Hyperion.Metadata.Entities.Ownership" sequence="4" value="Applications.Hyperion.Metadata.Entities.Ownership"/>
+                <element label="Applications.Hyperion.Reports" sequence="5" value="Applications.Hyperion.Reports"/>
+                <element label="Applications.Hyperion.Support Other" sequence="6" value="Applications.Hyperion.Support Other"/>
+                <element label="Applications.Hyperion.User Administration" sequence="7" value="Applications.Hyperion.User Administration"/>
+                <element label="Applications.Other" sequence="8" value="Applications.Other"/>
+            </choice>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_wegr_hyperion_co_hyperion_corporate_finance_changes_table" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed Skipped</label>
+            <language>en</language>
+            <name>x_wegr_hyperion_co_hyperion_corporate_finance_changes_table</name>
+            <sequence>0</sequence>
+            <sys_created_by>mglenn</sys_created_by>
+            <sys_created_on>2017-02-15 19:38:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bc4ad8d013853240ba1530128144b02d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mglenn</sys_updated_by>
+            <sys_updated_on>2017-02-15 19:38:43</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending</label>
+            <language>en</language>
+            <name>x_wegr_hyperion_co_hyperion_corporate_finance_changes_table</name>
+            <sequence>1</sequence>
+            <sys_created_by>mglenn</sys_created_by>
+            <sys_created_on>2017-02-15 19:38:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f84ad8d013853240ba1530128144b02e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mglenn</sys_updated_by>
+            <sys_updated_on>2017-02-15 19:38:43</sys_updated_on>
+            <value>-5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Work in Progress</label>
+            <language>en</language>
+            <name>x_wegr_hyperion_co_hyperion_corporate_finance_changes_table</name>
+            <sequence>2</sequence>
+            <sys_created_by>mglenn</sys_created_by>
+            <sys_created_on>2017-02-15 19:38:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b44ad8d013853240ba1530128144b02f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mglenn</sys_updated_by>
+            <sys_updated_on>2017-02-15 19:38:43</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed Complete</label>
+            <language>en</language>
+            <name>x_wegr_hyperion_co_hyperion_corporate_finance_changes_table</name>
+            <sequence>3</sequence>
+            <sys_created_by>mglenn</sys_created_by>
+            <sys_created_on>2017-02-15 19:38:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>704ad8d013853240ba1530128144b030</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mglenn</sys_updated_by>
+            <sys_updated_on>2017-02-15 19:38:43</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed Incomplete</label>
+            <language>en</language>
+            <name>x_wegr_hyperion_co_hyperion_corporate_finance_changes_table</name>
+            <sequence>4</sequence>
+            <sys_created_by>mglenn</sys_created_by>
+            <sys_created_on>2017-02-15 19:38:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3c4ad8d013853240ba1530128144b030</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mglenn</sys_updated_by>
+            <sys_updated_on>2017-02-15 19:38:43</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Open</label>
+            <language>en</language>
+            <name>x_wegr_hyperion_co_hyperion_corporate_finance_changes_table</name>
+            <sequence>5</sequence>
+            <sys_created_by>mglenn</sys_created_by>
+            <sys_created_on>2017-02-16 03:40:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4798c61013093200c01ddbf18144b015</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mglenn</sys_updated_by>
+            <sys_updated_on>2017-02-22 04:58:25</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_wegr_hyperion_co_hyperion_corporate_finance_changes_table</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mglenn</sys_created_by>
+            <sys_created_on>2017-02-15 19:38:43</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>ef23b72a13c63200c39b76666144b033</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="Hyperion Corporate Finance Changes" source="x_wegr_hyperion_co">7e291c9013853240ba1530128144b097</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Hyperion Corporate Finance Changes">7e291c9013853240ba1530128144b097</sys_scope>
+            <sys_update_name>sys_choice_x_wegr_hyperion_co_hyperion_corporate_finance_changes_table_state</sys_update_name>
+            <sys_updated_by>mglenn</sys_updated_by>
+            <sys_updated_on>2017-02-23 00:54:28</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

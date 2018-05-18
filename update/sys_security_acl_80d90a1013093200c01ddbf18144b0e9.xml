@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition table="x_wegr_hyperion_co_hyperion_corporate_finance_changes_table.state">active=true^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description>Allow write for state in x_wegr_hyperion_co_hyperion_corporate_finance_changes_table, for users with role x_wegr_hyperion_co.user, and if the ACL condition (active=true^EQ) evaluates to true.</description>
+        <name>x_wegr_hyperion_co_hyperion_corporate_finance_changes_table.state</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>mglenn</sys_created_by>
+        <sys_created_on>2017-02-16 03:46:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>80d90a1013093200c01ddbf18144b0e9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_wegr_hyperion_co_hyperion_corporate_finance_changes_table.state</sys_name>
+        <sys_package display_value="Hyperion Corporate Finance Changes" source="x_wegr_hyperion_co">7e291c9013853240ba1530128144b097</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Hyperion Corporate Finance Changes">7e291c9013853240ba1530128144b097</sys_scope>
+        <sys_update_name>sys_security_acl_80d90a1013093200c01ddbf18144b0e9</sys_update_name>
+        <sys_updated_by>mglenn</sys_updated_by>
+        <sys_updated_on>2017-02-21 19:24:22</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>
